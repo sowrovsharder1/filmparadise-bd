@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Add Title — FilmParadise BD</title><link rel="stylesheet" href="/assets/css/style.css"></head>
+<body class="admin-shell"><header class="admin-top"><div class="container admin-top-inner"><a class="admin-brand" href="/admin">FilmParadise BD / Admin</a><a class="btn" href="/admin">← Dashboard</a></div></header>
+<main class="container admin-main"><section class="form-card"><h1>Add movie / series</h1><p class="muted">Publish a new authorized catalog entry.</p><div id="form-message"></div><form id="title-form" class="form-grid">
+  <div class="form-field full"><label for="title">Title *</label><input id="title" name="title" required maxlength="180"></div>
+  <div class="form-field"><label for="type">Type *</label><select id="type" name="type"><option value="movie">Movie</option><option value="series">Web Series</option></select></div>
+  <div class="form-field"><label for="year">Year</label><input id="year" name="year" type="number" min="1888" max="2100"></div>
+  <div class="form-field"><label for="language">Language</label><input id="language" name="language" maxlength="60" placeholder="Hindi, Bangla, English"></div>
+  <div class="form-field"><label for="genre">Genre</label><input id="genre" name="genre" maxlength="180" placeholder="Action, Thriller"></div>
+  <div class="form-field"><label for="quality">Quality</label><input id="quality" name="quality" maxlength="40" placeholder="1080p, WEB-DL"></div>
+  <div class="form-field"><label for="duration">Duration</label><input id="duration" name="duration" maxlength="40" placeholder="2h 15m"></div>
+  <div class="form-field"><label for="imdb_rating">IMDb rating</label><input id="imdb_rating" name="imdb_rating" inputmode="decimal" maxlength="10" placeholder="7.8"></div>
+  <div class="form-field"><label for="country">Country</label><input id="country" name="country" maxlength="80"></div>
+  <div class="form-field"><label for="director">Director</label><input id="director" name="director" maxlength="180"></div>
+  <div class="form-field full"><label for="cast">Cast</label><input id="cast" name="cast" maxlength="300"></div>
+  <div class="form-field"><label for="release_date">Release date</label><input id="release_date" name="release_date" type="date"></div>
+  <div class="form-field"><label for="poster">Poster</label><input id="poster" name="poster" type="file" accept="image/jpeg,image/png,image/webp"></div>
+  <div class="form-field full"><label for="description">Description</label><textarea id="description" name="description" maxlength="5000" placeholder="Write a useful synopsis..."></textarea></div>
+  <div class="form-field full"><label>Categories</label><div id="category-list" class="cat-select"></div></div>
+  <div class="form-field full"><label>Download links</label><div class="form-grid"><div class="form-field"><label for="download_url_1">Server 1</label><input id="download_url_1" name="download_url_1" type="url" placeholder="https://..."></div><div class="form-field"><label for="download_url_2">Server 2</label><input id="download_url_2" name="download_url_2" type="url" placeholder="https://..."></div><div class="form-field"><label for="download_url_3">Server 3</label><input id="download_url_3" name="download_url_3" type="url" placeholder="https://..."></div></div></div>
+  <div class="form-field full"><div class="check-row"><label class="check"><input id="is_featured" type="checkbox"> Featured</label><label class="check"><input id="is_pinned" type="checkbox"> Pinned</label><label class="check">Status <select id="status" style="border:0;background:transparent;color:#fff"><option value="published">Published</option><option value="draft">Draft</option></select></label></div></div>
+  <div class="form-field full"><button class="btn primary" type="submit">Publish title</button></div>
+</form></section></main>
+<script src="/assets/js/admin-form.js" defer></script></body></html>

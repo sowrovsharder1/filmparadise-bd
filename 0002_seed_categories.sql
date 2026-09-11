@@ -1,0 +1,17 @@
+INSERT OR IGNORE INTO categories (name, slug, sort_order) VALUES
+('Bangla','bangla',10),
+('Hindi','hindi',20),
+('Bollywood','bollywood',30),
+('Bangla Dub','bangla-dub',40),
+('Hindi Dub','hindi-dub',50),
+('Dual Audio','dual-audio',60),
+('South Indian','south-indian',70),
+('Web Series','web-series',80),
+('Action','action',90),
+('Thriller','thriller',100),
+('Horror','horror',110),
+('Romance','romance',120),
+('Animation','animation',130),
+('Comedy','comedy',140),
+('Drama','drama',150),
+('K-Drama','k-drama',160);

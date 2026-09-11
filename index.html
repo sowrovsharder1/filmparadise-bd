@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard — FilmParadise BD</title><link rel="stylesheet" href="/assets/css/style.css"></head>
+<body class="admin-shell">
+  <header class="admin-top"><div class="container admin-top-inner"><a class="admin-brand" href="/">FilmParadise BD / Admin</a><div class="actions"><a class="btn" href="/admin/add">+ Add title</a><button id="logout" class="btn" type="button">Log out</button></div></div></header>
+  <main class="container admin-main">
+    <div id="admin-message"></div>
+    <div class="admin-grid">
+      <div class="stat-card"><small>Total titles</small><strong id="stat-total">—</strong></div>
+      <div class="stat-card"><small>Movies</small><strong id="stat-movies">—</strong></div>
+      <div class="stat-card"><small>Series</small><strong id="stat-series">—</strong></div>
+      <div class="stat-card"><small>Published</small><strong id="stat-published">—</strong></div>
+    </div>
+    <div class="admin-toolbar"><div><h1 style="margin:0">Catalog</h1><p class="muted" style="margin:3px 0 0">Manage your movie and series records.</p></div><div class="actions"><input id="admin-search" class="form-field" style="width:260px;padding:10px;background:#0f151d;border:1px solid #2a3542;color:#fff;border-radius:10px" placeholder="Search title..."><a class="btn primary" href="/admin/add">Add new</a></div></div>
+    <div class="table-wrap"><table><thead><tr><th></th><th>Title</th><th>Type</th><th>Year</th><th>Status</th><th>Updated</th><th>Actions</th></tr></thead><tbody id="admin-table"></tbody></table></div>
+  </main>
+  <script src="/assets/js/admin.js" defer></script>
+</body></html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d1117"><title>Admin Login — FilmParadise BD</title><link rel="stylesheet" href="/assets/css/style.css"></head>
+<body class="admin-shell">
+  <main class="admin-login">
+    <section class="login-card">
+      <a class="brand" href="/"><span class="brand-mark">FP</span><span class="brand-text"><strong>FilmParadise BD</strong><small>Secure admin</small></span></a>
+      <h1 style="margin-top:22px">Admin Login</h1>
+      <p class="muted">Sign in to manage your catalog.</p>
+      <div id="login-message" aria-live="polite"></div>
+      <form id="login-form">
+        <div class="form-field"><label for="username">Username</label><input id="username" name="username" required autocomplete="username" value="admin"></div>
+        <div class="form-field" style="margin-top:12px"><label for="password">Password</label><input id="password" name="password" type="password" required autocomplete="current-password"></div>
+        <button class="btn primary" type="submit">Sign in</button>
+      </form>
+      <p style="margin-top:16px;font-size:.75rem" class="muted">Your password is validated on the Cloudflare server and is never stored in browser code.</p>
+    </section>
+  </main>
+  <script src="/assets/js/admin-login.js" defer></script>
+</body></html>
