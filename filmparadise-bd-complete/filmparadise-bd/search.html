@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#12161d">
+  <meta name="description" content="Search movies and web series on FilmParadise BD.">
+  <title>Search — FilmParadise BD</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body data-page="search">
+  <div id="site-header"></div>
+  <main class="container section">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">DISCOVER</span>
+        <h1>Search</h1>
+      </div>
+    </div>
+    <form id="search-form" class="searchbar search-page-bar">
+      <label class="sr-only" for="search-input">Search Movie or Series</label>
+      <input id="search-input" name="q" type="search" placeholder="Search Movie or Series" autocomplete="off">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+    <p id="search-summary" class="muted"></p>
+    <div id="search-grid" class="movie-grid" aria-live="polite"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="/assets/js/app.js" defer></script>
+  <script src="/assets/js/search.js" defer></script>
+</body>
+</html>

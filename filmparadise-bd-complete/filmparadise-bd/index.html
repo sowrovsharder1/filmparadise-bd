@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="FilmParadise BD — a modern movie and web-series portal. Discover titles, details, genres and authorized download links.">
+  <meta name="theme-color" content="#12161d">
+  <meta property="og:title" content="FilmParadise BD">
+  <meta property="og:description" content="Discover movies and web series on FilmParadise BD.">
+  <meta property="og:type" content="website">
+  <title>FilmParadise BD — Movies & Web Series</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">FILMPARADISE BD</span>
+        <h1>Discover your next movie night.</h1>
+        <p>Browse movies and web series by language, genre, quality and release year.</p>
+      </div>
+      <form class="searchbar" action="/search" method="get">
+        <label class="sr-only" for="home-search">Search Movie or Series</label>
+        <input id="home-search" name="q" type="search" placeholder="Search Movie or Series" autocomplete="off">
+        <button type="submit" aria-label="Search">⌕</button>
+      </form>
+      <div class="quick-links" id="quick-links"></div>
+    </section>
+
+    <section class="container section" aria-labelledby="recent-heading">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">LATEST</span>
+          <h2 id="recent-heading">Recently Updated</h2>
+        </div>
+        <a class="view-all" href="/search?q=">View all →</a>
+      </div>
+      <div id="recent-grid" class="movie-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="container section" aria-labelledby="feature-heading">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">CURATED</span>
+          <h2 id="feature-heading">Featured Picks</h2>
+        </div>
+      </div>
+      <div id="featured-grid" class="movie-grid"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="/assets/js/app.js" defer></script>
+  <script src="/assets/js/home.js" defer></script>
+</body>
+</html>
